@@ -1,0 +1,21 @@
+.reference {
+  margin-right: 93px;
+
+  &-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-bottom: 20px;
+  }
+}
+
+.box {
+  margin-right: 70px;
+}
+
+.network:not(:last-child) {
+  margin-right: 10px;
+}

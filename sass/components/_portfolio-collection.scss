@@ -1,0 +1,39 @@
+.collection {
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  .&-tittle {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    text-align: start;
+  }
+}
+
+.collection:nth-child(3n) {
+  margin-right: 0;
+}
+
+.collection:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.picture {
+  text-decoration: none;
+  display: inline-block;
+  transition: 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .gallery-hidden,
+  &:focus .gallery-hidden {
+    transform: translatey(0);
+  }
+}
