@@ -1,3 +1,9 @@
+.section .make {
+  @media screen and (min-widh: 767px) {
+    display: none;
+  }
+}
+
 .section-tittle {
   color: $tittle-text-color;
   font-weight: 700;
