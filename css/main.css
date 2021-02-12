@@ -179,6 +179,13 @@ footer .container {
   margin-bottom: 20px;
 }
 
+.rage-header {
+  position: relative;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,6 +286,23 @@ footer .container {
 
 .menu-button.is-open .icon-menu {
   display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  padding: 48px 40px;
+  overflow-y: scroll;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.menu-container.is-open {
+  display: block;
 }
 
 .site-contact {
