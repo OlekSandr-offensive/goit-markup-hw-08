@@ -1,0 +1,71 @@
+.site-contact {
+  display: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.site-contact {
+  flex-direction: column;
+  margin-left: 84px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  // & .item + .item {
+  //   margin-left: 50px;
+  // }
+}
+
+.site-contact .contact-link {
+  color: $primary-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  align-items: center;
+  transition: 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $akcent-color;
+  }
+}
+
+.mail-icon,
+.tel-icon {
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $akcent-color;
+  }
+}
+
+// .mail-icon {
+//   width: 16px;
+//   height: 12px;
+
+//   &-icon {
+//     @media screen and (min-width: $tablet-width) {
+//       width: 14px;
+//       height: 10px;
+//     }
+//   }
+// }
+
+// .tel-icon {
+//   width: 10px;
+//   height: 16px;
+
+//   &-icon {
+//     @media screen and (min-width: $tablet-width) {
+//       width: 10px;
+//       height: 14px;
+//     }
+//   }
+// }

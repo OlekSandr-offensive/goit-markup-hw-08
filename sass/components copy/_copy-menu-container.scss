@@ -1,5 +1,4 @@
 .menu-container {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0px;
@@ -14,5 +13,9 @@
 
   &.is-open {
     display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }

@@ -36,10 +36,22 @@ h3 {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1170px;
+  }
 }
 
 .visually-hidden {
@@ -163,7 +175,6 @@ footer .container {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo-header {
@@ -179,13 +190,6 @@ footer .container {
   margin-bottom: 20px;
 }
 
-.rage-header {
-  position: relative;
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -195,11 +199,30 @@ footer .container {
           align-items: center;
 }
 
-.site-nav {
+.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.site-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 88px;
+  }
+}
+
+.site-nav {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -235,7 +258,6 @@ footer .container {
 }
 
 .link {
-  position: relative;
   display: block;
   padding: auto;
   text-decoration: none;
@@ -264,16 +286,22 @@ footer .container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
+  margin-left: auto;
 }
 
 .menu-button:hover, .menu-button:focus {
   fill: #2196f3;
   outline: none;
+}
+
+@media screen and (min-width: 767px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-close {
@@ -289,7 +317,6 @@ footer .container {
 }
 
 .menu-container {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0px;
@@ -305,32 +332,44 @@ footer .container {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
+}
+
 .site-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.site-contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 84px;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.site-contact .item + .item {
-  margin-left: 50px;
-}
-
 .site-contact .contact-link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: #757575;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -344,7 +383,6 @@ footer .container {
 
 .mail-icon,
 .tel-icon {
-  margin-right: 10px;
   fill: currentColor;
 }
 

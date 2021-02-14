@@ -1,0 +1,28 @@
+.footer {
+  background: $background-dark-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer .tittle {
+  width: 231px;
+  color: $primary-white-color;
+  font-style: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+footer .container {
+  display: flex;
+  align-items: baseline;
+}
