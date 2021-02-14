@@ -1,21 +1,33 @@
 .menu-container {
-  position: absolute;
-  top: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-
+  height: 100%;
   padding: 48px 40px;
   overflow-y: scroll;
 
-  background: #ffffff;
+  background: $primary-white-color;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
+  opacity: 0;
+  transition: 250ms $timing-function;
+
   &.is-open {
     display: block;
+    pointer-events: initial;
+    opacity: 1;
   }
+}
 
-  @media screen and (max-width: $tablet-width) {
-    display: none;
-  }
+.menu-nav {
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: auto;
+  color: $tittle-text-color;
 }
