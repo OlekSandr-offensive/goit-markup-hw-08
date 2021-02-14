@@ -1,19 +1,15 @@
-// .page-header {
-//   position: relative;
-//   border-bottom: 1px;
-//   border-bottom-style: solid;
-//   border-bottom-color: #ececec;
-// }
-
-.header {
-  display: flex;
-  align-items: center;
+.page-header {
+  @media screen and (min-width: $tablet-width) {
+    position: relative;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #ececec;
+  }
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 10px 0;
 }
 
 .site-nav {
@@ -23,11 +19,14 @@
     display: flex;
     margin-left: 88px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    margin-left: 93px;
+  }
 }
 
 .site-nav {
-  // display: flex;
-  // margin-left: 93px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -52,17 +51,18 @@
   letter-spacing: 0.02em;
   transition: 250ms $timing-function;
 
-  & .current {
-    color: $akcent-color;
-  }
-
   &:hover,
   &:focus {
     color: $akcent-color;
   }
 }
 
+.link.current {
+  color: $akcent-color;
+}
+
 .link {
+  position: relative;
   display: block;
   padding: auto;
   text-decoration: none;
