@@ -4,19 +4,26 @@
   text-align: center;
 
   &-tittle {
-    width: 696px;
+    max-width: 360px;
     margin: 0 auto 30px;
     color: $primary-white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop-width) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -24,7 +31,55 @@
       $background-overlay-color,
       $background-overlay-color
     ),
-    url('../image/Img-overlay.jpg');
+    url(/image/mobil.jpg/hero-overlay-450w@1x.jpg);
+  @media screen and (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        to right,
+        $background-overlay-color,
+        $background-overlay-color
+      ),
+      url(/image/mobil.jpg/hero-overlay-450w@2x.jpg);
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        $background-overlay-color,
+        $background-overlay-color
+      ),
+      url(/image/tablet.jpg/hero-overlay-354w@1x.jpg);
+    @media screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          $background-overlay-color,
+          $background-overlay-color
+        ),
+        url(/image/tablet.jpg/hero-overlay-354w@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        $background-overlay-color,
+        $background-overlay-color
+      ),
+      url(/image/desktop.jpg/hero-overlay-270w@1x.jpg);
+    @media screen and (min-resolution: 192dpi) {
+      background-image: linear-gradient(
+          to right,
+          $background-overlay-color,
+          $background-overlay-color
+        ),
+        url(/image/desktop.jpg/hero-overlay-270w@2x.jpg);
+    }
+  }
+
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
