@@ -39,6 +39,10 @@ h3 {
   margin: 0 auto;
   width: 450px;
 
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
   @media screen and (min-width: $tablet-width) {
     width: 768px;
   }

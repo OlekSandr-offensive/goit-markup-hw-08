@@ -42,6 +42,12 @@ h3 {
   width: 450px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -341,6 +347,12 @@ footer .container {
   display: none;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 .menu-container {
   z-index: 2;
   position: fixed;
@@ -536,25 +548,20 @@ footer .container {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .task {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.feature-item {
-  width: 270px;
-}
-
-.feature-list .feature-item + .feature-item {
-  margin-left: 30px;
+  margin-top: 60px;
 }
 
 .feature-list .tittle {
@@ -566,8 +573,13 @@ footer .container {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  .feature-list .tittle {
+    text-align: center;
+  }
+}
+
 .item-decoration {
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
