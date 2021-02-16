@@ -435,6 +435,7 @@ h3 {
 }
 
 .menu-nav {
+  display: block;
   font-style: normal;
   font-size: 40px;
   font-weight: 500;
