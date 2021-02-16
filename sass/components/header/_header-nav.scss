@@ -82,6 +82,8 @@
   }
 
   &.current::after {
-    opacity: 1;
+    @media screen and (min-width: 767px) {
+      opacity: 1;
+    }
   }
 }

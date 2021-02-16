@@ -17,6 +17,9 @@ p {
 .list {
   list-style: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
 }
 
@@ -74,6 +77,12 @@ h3 {
 }
 
 .footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
@@ -90,17 +99,25 @@ h3 {
   margin-bottom: 9px;
 }
 
-footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.reunion-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .reunion-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .reunion-box {
+  .footer-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -114,7 +131,7 @@ footer .container {
 }
 
 @media screen and (min-width: 1200px) {
-  .reunion-box {
+  .footer-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -128,24 +145,7 @@ footer .container {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-reunion {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .box {
-    margin-right: 70px;
-  }
-}
-
-.reunion-box {
+.box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,19 +160,8 @@ footer .container {
 }
 
 @media screen and (min-width: 768px) {
-  .reunion-box {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .box {
     margin-right: 165px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .reunion-box {
-    margin-right: 70px;
-    margin-bottom: 0;
-    text-align: start;
   }
 }
 
@@ -180,12 +169,6 @@ footer .container {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-@media screen and (max-width: 1200px) {
-  .address-list {
-    margin-bottom: 60px;
-  }
 }
 
 .address-list .link {
@@ -203,13 +186,9 @@ footer .container {
   margin-bottom: 9px;
 }
 
-.reference {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .reference {
-    margin-bottom: -60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -385,8 +364,10 @@ footer .container {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link.current::after {
-  opacity: 1;
+@media screen and (min-width: 767px) {
+  .link.current::after {
+    opacity: 1;
+  }
 }
 
 .menu-button {
@@ -473,6 +454,49 @@ footer .container {
   line-height: 1.18;
   letter-spacing: 0.02em;
   margin-bottom: auto;
+}
+
+.contact-conteiner {
+  display: contents;
+}
+
+.contact-link__mail {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+
+.contact-link__tel {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-bottom: 64px;
+}
+
+.contact-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .site-contact {
@@ -1609,6 +1633,12 @@ footer .container {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .by-line-text {
+    text-align: initial;
+  }
+}
+
 .by-line-input {
   max-width: 450px;
   padding: 15px 16px;
@@ -1703,6 +1733,7 @@ footer .container {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 200px;
+  margin: 0 auto;
   height: 50px;
   padding: 10px 28px 10px 29px;
   background: #2196f3;

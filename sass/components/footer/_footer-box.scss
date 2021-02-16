@@ -1,23 +1,27 @@
 .box {
-  @media screen and (min-width: $desktop-width) {
-    margin-right: 70px;
-  }
-}
-
-.reunion-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
-
   @media screen and (min-width: $tablet-width) {
-    justify-content: center;
     margin-right: 165px;
   }
-
-  @media screen and (min-width: $desktop-width) {
-    margin-right: 70px;
-    margin-bottom: 0;
-    text-align: start;
-  }
 }
+
+// .reunion-box {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-bottom: 60px;
+
+//   @media screen and (min-width: $tablet-width) {
+//     justify-content: center;
+//     margin-right: 165px;
+//   }
+
+//   @media screen and (min-width: $desktop-width) {
+//     margin-right: 70px;
+//     margin-bottom: 0;
+//     text-align: start;
+//   }
+// }

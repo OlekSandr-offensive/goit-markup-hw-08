@@ -45,3 +45,45 @@
   letter-spacing: 0.02em;
   margin-bottom: auto;
 }
+
+.contact-conteiner {
+  display: contents;
+}
+
+.contact-link__mail {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  margin-bottom: 32px;
+}
+
+.contact-link__tel {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+  margin-bottom: 64px;
+}
+
+.contact-menu {
+  display: flex;
+}
+
+.contact-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+
+  &:not(:last-child) {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}

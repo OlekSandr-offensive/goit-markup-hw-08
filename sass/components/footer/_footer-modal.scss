@@ -24,5 +24,9 @@
     text-transform: uppercase;
     color: $primary-white-color;
     margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop-width) {
+      text-align: initial;
+    }
   }
 }
