@@ -2,6 +2,7 @@
   background: $background-dark-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  // text-align: center;
 
   &-list {
     list-style-type: none;
@@ -12,7 +13,7 @@
 }
 
 .footer .tittle {
-  width: 231px;
+  // width: 231px;
   color: $primary-white-color;
   font-style: inherit;
   font-weight: 400;
@@ -25,4 +26,25 @@
 footer .container {
   display: flex;
   align-items: baseline;
+}
+
+.reunion-box {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    align-items: baseline;
+    margin-right: 93px;
+    justify-content: flex-start;
+  }
+}
+
+.footer-reunion {
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    align-items: baseline;
+  }
 }

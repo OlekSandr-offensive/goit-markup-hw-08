@@ -1,5 +1,5 @@
 .by-line-input {
-  width: 358px;
+  max-width: 450px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -7,15 +7,27 @@
   border-radius: 4px;
   background-color: transparent;
   outline: none;
-  margin-right: 12px;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 358px;
+    margin-right: 12px;
+    margin-left: 0;
+  }
 
   &::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
+    // display: flex;
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
