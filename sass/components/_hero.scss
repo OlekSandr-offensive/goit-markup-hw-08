@@ -31,14 +31,14 @@
       $background-overlay-color,
       $background-overlay-color
     ),
-    url(/image/mobil.jpg/hero-overlay-450w@1x.jpg);
+    url(../image/mobil.jpg/hero-overlay-450w@1x.jpg);
   @media screen and (min-resolution: 192dpi) {
     background-image: linear-gradient(
         to right,
         $background-overlay-color,
         $background-overlay-color
       ),
-      url(/image/mobil.jpg/hero-overlay-450w@2x.jpg);
+      url(../image/mobil.jpg/hero-overlay-450w@2x.jpg);
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -49,14 +49,14 @@
         $background-overlay-color,
         $background-overlay-color
       ),
-      url(/image/tablet.jpg/hero-overlay-354w@1x.jpg);
+      url(../image/tablet.jpg/hero-overlay-354w@1x.jpg);
     @media screen and (min-resolution: 192dpi) {
       background-image: linear-gradient(
           to right,
           $background-overlay-color,
           $background-overlay-color
         ),
-        url(/image/tablet.jpg/hero-overlay-354w@2x.jpg);
+        url(../image/tablet.jpg/hero-overlay-354w@2x.jpg);
     }
   }
 
@@ -68,7 +68,7 @@
         $background-overlay-color,
         $background-overlay-color
       ),
-      url(/image/desktop.jpg/hero-overlay-270w@1x.jpg);
+      url(../image/desktop.jpg/hero-overlay-270w@1x.jpg);
     @media screen and (min-resolution: 192dpi) {
       background-image: linear-gradient(
           to right,
