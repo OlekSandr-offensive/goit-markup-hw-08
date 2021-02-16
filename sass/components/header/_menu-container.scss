@@ -1,5 +1,6 @@
 .menu-container {
   z-index: 2;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,13 +13,14 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
 
-  opacity: 0;
+  // opacity: 0;
   transition: 250ms $timing-function;
 
   &.is-open {
-    display: block;
-    pointer-events: initial;
-    opacity: 1;
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
@@ -30,4 +32,16 @@
   letter-spacing: 0.02em;
   margin-bottom: auto;
   color: $tittle-text-color;
+}
+
+.menu:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.conteiner-nav {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  margin-bottom: auto;
 }

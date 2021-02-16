@@ -12,7 +12,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
   // justify-content: center;
 
   // & > li:not(:last-child) {
@@ -38,6 +37,11 @@
   border-radius: 4px;
   color: $border-line-color;
   transition: 250ms $timing-function;
+
+  @media screen and (min-width: $desktop-width) {
+    max-width: 170px;
+    flex-basis: calc(100% / 6 - 30px);
+  }
 
   &:hover,
   &:focus {
@@ -79,15 +83,15 @@
   margin-top: 30px;
   flex-basis: calc(100% / 2 - 30px);
 
-  // @media screen and (min-width: $tablet-width) {
-  //   max-width: 226px;
-  //   flex-basis: calc(100% / 3 - 30px);
-  // }
+  @media screen and (min-width: $tablet-width) {
+    max-width: 226px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
 
-  // @media screen and (min-width: $desktop-width) {
-  //   max-width: 170px;
-  //   flex-basis: calc(100% / 6 - 30px);
-  // }
+  @media screen and (min-width: $desktop-width) {
+    max-width: 170px;
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 // .clients-link {
