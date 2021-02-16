@@ -1,0 +1,44 @@
+.form-window {
+  padding: 40px;
+}
+
+.form-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $tittle-text-color;
+  margin-bottom: 12px;
+}
+
+.form-box {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+
+.form-line {
+  display: block;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: $primary-text-color;
+}
+
+.form-svg {
+  position: absolute;
+  left: 12px;
+  top: 30px;
+  fill: $tittle-text-color;
+}
+
+.form-box .input:not(:last-child) {
+  padding-left: 42px;
+}
+
+.label:focus-within > .form-svg {
+  fill: $akcent-color;
+}

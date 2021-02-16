@@ -1,0 +1,19 @@
+.by-line {
+  margin: 0;
+  padding: 0;
+
+  &-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    margin-bottom: 20px;
+  }
+}
+
+.by-line-form {
+  display: flex;
+}

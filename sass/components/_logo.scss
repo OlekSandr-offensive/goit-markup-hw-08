@@ -25,4 +25,7 @@
 .down {
   display: inline-block;
   margin-bottom: 20px;
+  @media screen and (min-width: $desktop-width) {
+    margin-right: auto;
+  }
 }

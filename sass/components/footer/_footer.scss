@@ -23,6 +23,9 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
+  @media screen and (min-width: $desktop-width) {
+    margin-right: auto;
+  }
 }
 
 // footer .container {
