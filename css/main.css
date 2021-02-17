@@ -1303,6 +1303,7 @@ h3 {
 
 .collection-tittle {
   padding: 20px 24px;
+  padding-right: 0;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1377,12 +1378,20 @@ h3 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 95%;
+  max-width: 450px;
+  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-button {
@@ -1556,15 +1565,33 @@ h3 {
   display: inline-block;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .label-span {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 .checkbox-link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-link {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .check-input + .checkbox-label::before {
