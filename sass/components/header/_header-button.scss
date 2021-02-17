@@ -18,14 +18,14 @@
   }
 }
 
-.menu-button .icon-close {
+.menu-button .icon-menu {
   display: none;
 }
 
-.menu-button.is-open .icon-close {
+.menu-button.is-open .icon-menu {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button.is-open .icon-close {
   display: none;
 }
