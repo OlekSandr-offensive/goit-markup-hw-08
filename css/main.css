@@ -831,12 +831,12 @@ h3 {
   color: #212121;
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .section-tittle {
     font-size: 36px;
     line-height: 42px;
@@ -1069,27 +1069,20 @@ h3 {
 }
 
 .client-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
   fill: currentColor;
 }
 
 .client-link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -1347,6 +1340,7 @@ h3 {
 }
 
 .backdrop {
+  z-index: 3;
   position: fixed;
   top: 0;
   left: 0;

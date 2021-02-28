@@ -20,17 +20,17 @@
 }
 
 .client-icon {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  // display: flex;
+  // justify-content: center;
+  // text-align: center;
   fill: currentColor;
 }
 
 .client-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   border: 1px solid $border-line-color;
   box-sizing: border-box;
